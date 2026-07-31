@@ -1,0 +1,27 @@
+generated: '2026-07-20'
+method: probed
+source: live HTTP probes of neocis.com well-known + llms.txt paths
+host: https://neocis.com
+probes:
+- path: /.well-known/security.txt
+  status: 404
+  file: null
+- path: /.well-known/openid-configuration
+  status: 404
+  file: null
+- path: /.well-known/oauth-authorization-server
+  status: 404
+  file: null
+- path: /.well-known/api-catalog
+  status: 404
+  file: null
+- path: /.well-known/ai-plugin.json
+  status: 404
+  file: null
+- path: /llms.txt
+  status: 404
+  file: null
+result: none
+note: Neocis publishes a marketing website only; no well-known metadata, OAuth
+  discovery, AI-plugin, or llms.txt surface is exposed. Consistent with a dental
+  robotics hardware company that operates no public developer platform.

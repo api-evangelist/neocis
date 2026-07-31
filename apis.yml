@@ -1,8 +1,23 @@
 aid: neocis
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/neocis.png
 name: Neocis
-description: 'Neocis is a company surfaced as a portfolio company of norwest-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Neocis is a medical robotics company and the maker of Yomi, described as the first and only
+  FDA-cleared robot-assisted dental surgery system. Yomi combines preoperative implant planning software
+  with intraoperative haptic robotic guidance to assist dentists during dental implant placement procedures.
+  The company sells hardware, planning software, and practitioner training to dental practices rather than
+  operating a public developer platform. Neocis is a portfolio company of Norwest Venture Partners. As of
+  this profile it publishes no public API, developer portal, SDK, or webhook surface.'
 url: https://raw.githubusercontent.com/api-evangelist/neocis/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +27,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-- Unknown
+- Medical Devices
+- Dental
+- Robotics
+- Surgery
+- Health
+- Medical
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +43,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/neocis-domain-security.yml
+- type: PrivacyPolicy
+  url: https://www.neocis.com/privacy-policy/
 - type: Website
   url: https://neocis.com
+x-enrichment:
+  date: '2026-07-20'
+  status: nochange
+  artifacts_added: 1
+  pass: local-v1
